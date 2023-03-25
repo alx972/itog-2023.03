@@ -10,3 +10,5 @@ int excludeLargerLength = 3; //ограничитель длины слова, �
 var arrayOrigin = FillArrayManually();
 
 var arrayResult = arrayOrigin.ExcludeLongWords(excludeLargerLength);
+
+Console.WriteLine($"{arrayOrigin.Print()} -> {arrayResult.Print()}");
