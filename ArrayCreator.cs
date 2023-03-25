@@ -10,4 +10,14 @@ public static class ArrayCreator
         return new string[len];
     }
     
+    /// <summary>
+    /// Объединяет элементы массива в строку
+    /// </summary>
+    /// <param name="arr">Массив</param>
+    /// <returns>Строка с представлением массива</returns>
+    public static string Print(this string[] arr)
+    {
+        return $"[\"{String.Join("\", \"", arr)}\"]"; //объединяем массив в строку, обрамляем слова кавычками
+    }
+
 }
