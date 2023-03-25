@@ -7,8 +7,8 @@ using static ArrayCreator;
 
 int excludeLargerLength = 3; //ограничитель длины слова, длинее этого значения не копируем во второй массив
 
-var arrayOrigin = FillArrayManually();
+var arrayOrigin = FillArrayManually(); // создаем и заполняем исходный массив строк 
 
-var arrayResult = arrayOrigin.ExcludeLongWords(excludeLargerLength);
+var arrayResult = arrayOrigin.ExcludeLongWords(excludeLargerLength); // исключаем слова длиннее excludeLargerLength и складываем в другой массив
 
-Console.WriteLine($"{arrayOrigin.Print()} -> {arrayResult.Print()}");
+Console.WriteLine($"{arrayOrigin.Print()} -> {arrayResult.Print()}"); // выводим результат на печать
