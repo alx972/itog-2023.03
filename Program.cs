@@ -7,4 +7,6 @@ using static ArrayCreator;
 
 int excludeLargerLength = 3; //ограничитель длины слова, длинее этого значения не копируем во второй массив
 
-var arrayOrigin = 0.Create();
+var arrayOrigin = FillArrayManually();
+
+var arrayResult = arrayOrigin.ExcludeLongWords(excludeLargerLength);
